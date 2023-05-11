@@ -1,0 +1,50 @@
+.draggers {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.draggers-group {
+  max-width: calc(80vw);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* overflow: auto; */
+  gap: 0.5rem;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .draggers-group {
+    gap: 0.2rem;
+  }
+}
+
+.draggers-list {
+  background-color: white;
+}
+
+.draggers-dropdown-overlay {
+  z-index: 3 !important;
+}
+
+.ant-dropdown .ant-segmented-group {
+  max-width: calc(100vw);
+  overflow: auto;
+}
+
+.ant-segmented-item-label {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .ant-segmented-item-label {
+    min-width: 45px;
+  }
+}

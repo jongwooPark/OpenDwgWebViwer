@@ -1,0 +1,6 @@
+{
+  "registration_host": "https://odaweb.azurefd.net/auth",
+  "api_host": "http://127.0.0.1:8080",
+  "visualizejs_url": "",
+  "supportFormats": [ "DGN", "DWF", "DWG", "DXF", "IFC", "IFCZIP", "NWC", "NWD", "OBJ", "RCS", "RFA", "RVT", "STEP", "STL", "STP", "VSFX" ]
+}

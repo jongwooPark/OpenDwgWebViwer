@@ -1,0 +1,103 @@
+{
+  "name": "web-viewer",
+  "homepage": "./",
+  "version": "24.3.22",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.24.5",
+    "antd-colorpicker": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.6.2",
+    "buffer": "^6.0.3",
+    "bytes": "^3.1.2",
+    "file-saver": "^2.0.5",
+    "history": "^5.3.0",
+    "jquery": "^3.6.0",
+    "jquery-ui-bundle": "^1.12.1-migrate",
+    "moment": "^2.29.1",
+    "open-cloud-client": "~24.3",
+    "path-browserify": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "prettier": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "rxjs": "^6.6.7",
+    "sanitize-filename": "^1.6.3",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "format": "prettier --write ./src",
+    "check": "prettier --check ./src",
+    "lint": "eslint ./src",
+    "start": "react-scripts start",
+    "build": "set CI=true && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "playwright": "playwright test --workers 1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "default-param-last": "warn",
+      "lines-between-class-members": [
+        "warn",
+        "always",
+        {
+          "exceptAfterSingleLine": true
+        }
+      ],
+      "no-constant-condition": [
+        "error",
+        {
+          "checkLoops": false
+        }
+      ],
+      "no-duplicate-imports": "warn",
+      "no-promise-executor-return": "warn",
+      "no-async-promise-executor": "warn",
+      "no-undef": "warn",
+      "no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+      "no-useless-computed-key": "warn",
+      "object-shorthand": [
+        "warn",
+        "properties"
+      ],
+      "prefer-const": "warn",
+      "require-await": "warn",
+      "react/no-children-prop": "error",
+      "react/react-in-jsx-scope": "warn"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

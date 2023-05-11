@@ -1,0 +1,131 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~antd/dist/antd.css";
+
+body {
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+label {
+  margin-bottom: auto !important;
+}
+
+i {
+  font-size: 2em;
+}
+
+/* bootstrap */
+
+.btn-outline-secondary {
+  padding: 0.2em 0.5em;
+  font-size: 14px;
+  border-radius: 0;
+  color: var(--logotype-blue);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  column-gap: 0.3em;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+  background-color: var(--white);
+}
+
+.btn-outline-secondary:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  background-color: var(--white);
+  color: inherit;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+}
+
+.btn-outline-secondary:active {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  background-color: inherit !important;
+  color: inherit !important;
+  border: 1px solid #f6f6f6;
+  transition: unset !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border: 1px solid #f6f6f6;
+}
+
+.dropdown-menu {
+  font-size: inherit;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.font-size-sm {
+  font-size: 85% !important;
+}
+
+/* AntD */
+
+.anticon svg {
+  vertical-align: baseline;
+}
+
+.ant-layout-sider {
+  border-right: 1px solid #dee2e6;
+}
+
+.ant-layout-sider-trigger {
+  border-top: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+.ant-page-header {
+  padding: 1rem 1.5rem;
+}
+
+.ant-menu {
+  border: 0 !important;
+}
+
+.ant-menu-vertical {
+  border: 0 !important;
+}
+
+.ant-menu-item {
+  margin: 0 !important;
+}
+
+.ant-menu-submenu {
+  margin: 0 !important;
+}
+
+.ant-menu-submenu-title {
+  margin: 0 !important;
+}
+
+.ant-form-item-explain {
+  font-size: 85% !important;
+}
+
+.ant-form-item-extra {
+  font-size: 85% !important;
+}
+
+.ant-dropdown-menu {
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.ant-segmented-item:hover:not(.ant-segmented-item-selected):not(.ant-segmented-item-disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Demo Viewer */
+
+.large-icon {
+  font-size: 24px;
+}

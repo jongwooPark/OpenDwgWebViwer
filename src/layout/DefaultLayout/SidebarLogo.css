@@ -1,0 +1,13 @@
+.sidebar-logo {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 1rem;
+}
+
+.sidebar-logo svg {
+  width: auto;
+  height: 26px;
+}

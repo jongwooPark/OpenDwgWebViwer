@@ -1,0 +1,63 @@
+.viewer {
+  position: relative;
+}
+
+.active-dragger {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+}
+
+.actions-spinner {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  width: 200px !important;
+  height: 200px !important;
+  color: #05093b;
+}
+
+.object-explorer {
+  left: 42px;
+}
+
+.object-explorer .active {
+  color: var(--orange);
+}
+
+.object-explorer ul {
+  list-style: none;
+  padding-inline-start: 0.75em;
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.object-explorer ul:first-child {
+  padding-inline-start: 0;
+}
+
+.properties-explorer {
+  left: calc(100% - 342px);
+}
+
+.properties-explorer .card-body {
+  padding: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-pan {
+  cursor: url(../assets/cursors/pan.png) 0 0, default !important;
+}
+
+.cursor-pan:active {
+  cursor: url(../assets/cursors/pan-active.png) 0 0, default !important;
+}
+
+.cursor-orbit {
+  cursor: url(../assets/cursors/rotate.png) 0 0, default;
+}
+
+.cursor-orbit:active {
+  cursor: url(../assets/cursors/rotate-active.png) 0 0, default;
+}
